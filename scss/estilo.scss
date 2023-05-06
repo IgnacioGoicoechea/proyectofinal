@@ -6,7 +6,6 @@
 #2A7F62
 */
 
-
 * {
     padding: 0;
     margin: 0;
@@ -15,398 +14,417 @@
 
 /* navegador */
 
-
-
-
-
-
-header { display: flex;
+header {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(234, 243, 151, 1)!important;
-    height: 20vh;
-    .bg-body-tertiary{
-            padding: 0;
-        }
-    .fondo{
-            background-color: #eaf397
-        }
-    nav{ 
-        
-        div{
-            .navbar-brand{
-                margin: 0;
-                padding: 0;
+    background-color: rgba(234, 243, 151, 1) !important;
+    height: 25vh;
+
+    .bg-body-tertiary {
+        padding: 0;
+    }
+
+    .fondo {
+        background-color: #eaf397;
+    }
+
+    nav {
+        div {
+            a {
+                padding: 15px 50px;
             }
         }
+
         ul {
-    list-style: none;
-    display: flex;}
-            li {
-        padding: 0 20px;    }
-                a {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;}
-                    img {
-    width: 150px;}
- 
-}
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            padding: 0 20px;
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        img {
+            width: 150px;
+        }
+    }
 }
 
-.btn{
-    background-color: rgba(234, 243, 151, 1) ;
-    border: none;
-    color: black;
-    font-weight: bolder;
-    padding: 0 12px;
-}
-.btn:hover{
-    transform: scale(1.2);
-    border: 2px black solid;
-    background-color:  rgba(234, 243, 151, 1);
-    color: black; 
-}
 /* el cuerpo de la pagina */
-
-
-h2 {
-    color: #374546;
-}
-
 main {
     height: 70vh;
     text-align: center;
     background: rgb(222, 184, 135);
-    background: linear-gradient(0deg, rgba(222, 184, 135, 1) 0%, rgba(214, 232, 104, 1) 50%, rgba(234, 243, 151, 1) 100%);
+    background: linear-gradient(0deg,
+            rgba(222, 184, 135, 1) 0%,
+            rgba(214, 232, 104, 1) 50%,
+            rgba(234, 243, 151, 1) 100%);
+
     h1 {
         color: #171a19;
         padding: 10px 0;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Courier, monospace;
     }
-    div section img{
-        padding: 10px;
-    }
-    img {
-    width: 320px;}
-    div{
-        section{
-            .texto-inicio {
-                    width: 320px;
-                    text-align: center;
-                    padding: 10px;
-                    box-sizing: border-box;
+
+    div {
+        display: flex;
+
+        justify-content: space-around;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                .btn {
+                    background-color: rgba(234, 243, 151, 1);
+                    border: none;
+                    color: black;
+                    font-weight: bolder;
+                    padding: 0 12px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        border: 2px black solid;
+                        background-color: rgba(234, 243, 151, 1);
+                        color: black;
+                    }
                 }
-        }
+            }
 
+            img {
+                padding: 10px;
+            }
         }
-       
-        
     }
 
-.card{
-width:250px;
-}
-main div {
-    display: flex;
+    img {
+        width: 320px;
+    }
 
-    justify-content: space-around
-}
+    div {
+        section {
+            .texto-inicio {
+                width: 320px;
+                text-align: center;
+                padding: 10px;
+                box-sizing: border-box;
+            }
 
-main div section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+            .card {
+                width: 250px;
+            }
+        }
+    }
 
-/* seccion de mates */
-.mates {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-main a{
-    text-decoration: none;
-    color: #171a19;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-}
-main a:hover{
-    transform: scale(1.1);
-}
-.todos-los-mates {
-    height: 70vh;
-}
+    /* seccion de mates */
+    a {
+        text-decoration: none;
+        color: #171a19;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        transition: 0.5s;
 
-.grid-conteiner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-        "imagen1 imagen2 imagen3"
-        "imagen4 imagen5 imagen6"
-    ;
-    margin: 50px auto;
-    width: 600px;
-    height: 600px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 
+    .grid-conteiner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "imagen1 imagen2 imagen3"
+            "imagen4 imagen5 imagen6";
+        margin: 50px auto;
+        width: 600px;
+        height: 600px;
+    }
+
+    .imagen {
+        margin: 5px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .imagen1 {
+        grid-area: imagen1;
+        background-image: url("../imagenes/camionero.jfif");
+    }
+
+    .imagen2 {
+        grid-area: imagen2;
+        background-image: url("../mates/camionero/WhatsApp\ Image\ 2023-03-31\ at\ 11.55.56\ AM.jpeg");
+    }
+
+    .imagen3 {
+        grid-area: imagen3;
+        background-image: url("../mates/camionero/WhatsApp\ Image\ 2023-04-19\ at\ 1.16.05\ PM\ \(1\).jpeg");
+    }
+
+    .imagen4 {
+        grid-area: imagen4;
+        background-image: url("../imagenes/imperial.jfif");
+    }
+
+    .imagen5 {
+        grid-area: imagen5;
+        background-image: url("../mates/imperial/imperial.jpeg");
+    }
+
+    .imagen6 {
+        grid-area: imagen6;
+        background-image: url("../mates/imperial/WhatsApp\ Image\ 2023-04-19\ at\ 1.16.05\ PM.jpeg");
+    }
+
+    /* seccion de mates */
 }
-
-.imagen {
-    margin: 5px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319)
-}
-
-.imagen:hover {
-    transform: scale(1.1);
-}
-
-.imagen1 {
-    grid-area: imagen1;
-    background-image: url("../imagenes/camionero.jfif");
-}
-
-.imagen2 {
-    grid-area: imagen2;
-    background-image: url('../mates/camionero/WhatsApp\ Image\ 2023-03-31\ at\ 11.55.56\ AM.jpeg');
-}
-
-.imagen3 {
-    grid-area: imagen3;
-    background-image: url('../mates/camionero/WhatsApp\ Image\ 2023-04-19\ at\ 1.16.05\ PM\ \(1\).jpeg');
-}
-
-.imagen4 {
-    grid-area: imagen4;
-    background-image: url('../imagenes/imperial.jfif');
-}
-
-.imagen5 {
-    grid-area: imagen5;
-    background-image: url('../mates/imperial/imperial.jpeg');
-}
-
-.imagen6 {
-    grid-area: imagen6;
-    background-image: url('../mates/imperial/WhatsApp\ Image\ 2023-04-19\ at\ 1.16.05\ PM.jpeg');
-}
-
 
 /* contactanos */
-.gracias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.muchas{
-    margin: 40px;
-}
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.contactanos {
+    .gracias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    width: 250px;
+                    margin: 10px;
+                }
+
+                .btn {
+                    background-color: rgba(234, 243, 151, 1);
+                    border: none;
+                    color: black;
+                    font-weight: bolder;
+                    padding: 0 12px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        border: 2px black solid;
+                        background-color: rgba(234, 243, 151, 1);
+                        color: black;
+                    }
+                }
+
+                p {
+                    font-weight: bold;
+                }
+
+                textarea {
+                    width: 251px;
+                    height: 246px;
+                }
+            }
+        }
+
+        .muchas {
+            margin: 40px;
+        }
+    }
 }
 
-.formulario input {
-    width: 250px;
-}
-
-.formulario select {
-    width: 250px;
-}
-
-.formulario p {
-    font-weight: bold;
-}
-
-.formulario textarea {
-    width: 251px;
-    height: 246px;
-}
-
-#boton {
-    width: 100px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: #2A7F62;
-    font-weight: bold;
-    color: aqua;
-}
-
-#boton:hover {
-    background-color: black;
-    color: chartreuse;
-    transform: scale(1.05);
-    box-shadow: 7px 7px;
-}
+/* contactanos */
 
 /* sobre sonostros */
-iframe {
-    height: 300px;
-    width: 300px;
-}
-
 .nosotros {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
+
+    div {
+        .sobre-nosotros {
+            display: flex;
+            width: 350px;
+            align-items: center;
+            padding: 20px;
+
+            .presentacion {
+                font-weight: 700;
+                font-family: Georgia, "Times New Roman", Times, serif;
+            }
+
+            iframe {
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }
 }
 
-.sobre-nosotros {
-    display: flex;
-    width: 300px;
-    align-items: center;
-    padding: 10px;
-}
+/*sobre nosotros*/
 
 /* forma de pago */
-.forma-de-pago {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pago {
-    display: flex;
-    flex-direction: column;
-
-}
-
 .main-pago {
     height: 70vh;
+
+    .forma-de-pago {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .pago {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 20px;
+                font-weight: bolder;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 50px;
+                }
+
+                .mercado {
+                    width: 100px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
 
-.pago li {
-    padding: 20px;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pago li img {
-    width: 50px;
-}
-
-#mercado {
-    width: 100px;
-    display: flex;
-    align-items: center;
-}
-
-
+/*forma de pago*/
 /* pie de pagina */
 footer {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     text-align: center;
     background-color: rgba(222, 184, 135, 1);
     flex-direction: column;
 
+    a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 15px;
+        list-style: none;
+        text-decoration: none;
+        font-weight: bolder;
+        color: #171a19;
+    }
+
+    hr {
+        display: flex;
+    }
+
+    .pie {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-footer a {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 15px;
-    list-style: none;
-    text-decoration: none;
-    font-weight: bolder;
-}
+/* pie de pagina*/
 
-footer hr {
-    display: flex;
-}
+@media (max-width: 993px) {
 
-.pie {
-    display: flex;
-    justify-content: center;
-}
-
-@media(max-width:993px) {
-    header{
+    /*nav*/
+    header {
         height: auto;
     }
-    .estilo{
+
+    /*mates*/
+    .estilo {
         height: 105vh;
     }
-    .pie{
-        
+}
+
+@media (max-width: 640px) {
+
+    /*nav*/
+    header {
+        nav {
+            div {
+                a {
+                    img {
+                        width: 101px;
+                    }
+                }
+            }
+        }
     }
-    }
-@media(max-width:640px) {
-    .estilo{
+
+    /*mates*/
+    .estilo {
         height: 105vh;
     }
-    .gracias{
+
+    .gracias {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    header{
-        height: auto;
-    }
-    nav ul li {
-        padding: 0 7px;
-    }
+    main {
+        h1 {
+            padding: 15px;
+        }
 
-    nav ul {
-        padding: 0;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
-
-    main h1 {
-        padding: 15px;
-    }
-
-    main div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main div {
-        justify-content: center
-    }
-
-    header a img {
-        width: 101px;
-    }
-
     .nosotros {
         flex-direction: column;
-    }
-    .contactanos{
         height: auto;
     }
-    .todos-los-mates{
+    .contactanos {
         height: auto;
     }
 }
-
 @media (max-width: 767px) {
-    .grid-conteiner {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        width: 300px;
-        grid-template-areas:
-            "imagen1 imagen2"
-            "imagen3 imagen3"
-            "imagen4 imagen5"
-            "imagen6 imagen6"
-        ;
+    main {
+        height: auto;
     }
-    .todos-los-mates{
-        height: 84vh;
+    .mate {
+        height: 80vh;
+
+        .grid-conteiner {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            width: 300px;
+            grid-template-areas:
+                "imagen1 imagen2"
+                "imagen3 imagen3"
+                "imagen4 imagen5"
+                "imagen6 imagen6";
+        }
     }
-    main {height: 100vh;}
 }
