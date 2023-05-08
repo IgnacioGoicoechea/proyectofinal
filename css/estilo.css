@@ -70,7 +70,8 @@ main {
     box-sizing: border-box; }
   main div section .tipografia {
     font-family: "Shadows Into Light", cursive;
-    font-size: large; }
+    font-size: large;
+    width: 350px; }
   main div section .card {
     width: 300xp; }
 
