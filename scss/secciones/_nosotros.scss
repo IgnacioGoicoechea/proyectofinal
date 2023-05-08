@@ -1,12 +1,12 @@
 .nosotros {
     @include flex-mobile
-     height: 80vh;
+    height: 80vh;
  
      div {
          .sobre-nosotros {
-             @include flex(center,null,null)
-             width: 350px;
-             padding: 20px;
+            @include flex(center,null,null)
+            width: 350px;
+            padding: 20px;
  
              .presentacion {
                  font-weight: 700;

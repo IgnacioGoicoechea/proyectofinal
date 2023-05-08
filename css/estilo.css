@@ -74,53 +74,59 @@ main {
   main div section .card {
     width: 300xp; }
 
-main {
-  /* seccion de mates */ }
-  main a {
-    text-decoration: none;
-    color: #171a19;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    transition: 0.5s; }
-    main a:hover {
-      transform: scale(1.1); }
-  main .grid-conteiner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6";
-    margin: 50px auto;
-    width: 600px;
-    height: 600px; }
-  main .imagen {
-    margin: 5px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319); }
-    main .imagen:hover {
-      transform: scale(1.1); }
-  main .imagen1 {
-    grid-area: imagen1;
-    background-image: url("../imagenes/camionero.jfif"); }
-  main .imagen2 {
-    grid-area: imagen2;
-    background-image: url("../mates/camionero/WhatsApp Image 2023-03-31 at 11.55.56 AM.jpeg"); }
-  main .imagen3 {
-    grid-area: imagen3;
-    background-image: url("../mates/camionero/WhatsApp Image 2023-04-19 at 1.16.05 PM (1).jpeg"); }
-  main .imagen4 {
-    grid-area: imagen4;
-    background-image: url("../imagenes/imperial.jfif"); }
-  main .imagen5 {
-    grid-area: imagen5;
-    background-image: url("../mates/imperial/imperial.jpeg"); }
-  main .imagen6 {
-    grid-area: imagen6;
-    background-image: url("../mates/imperial/WhatsApp Image 2023-04-19 at 1.16.05 PM.jpeg"); }
+main a {
+  text-decoration: none;
+  color: #171a19;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  transition: 0.5s; }
+  main a:hover {
+    transform: scale(1.1); }
+
+main .grid-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6";
+  margin: 50px auto;
+  width: 600px;
+  height: 600px; }
+
+main .imagen {
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.319); }
+  main .imagen:hover {
+    transform: scale(1.1); }
+
+main .imagen1 {
+  grid-area: imagen1;
+  background-image: url("../imagenes/camionero.jfif"); }
+
+main .imagen2 {
+  grid-area: imagen2;
+  background-image: url("../mates/camionero/WhatsApp Image 2023-03-31 at 11.55.56 AM.jpeg"); }
+
+main .imagen3 {
+  grid-area: imagen3;
+  background-image: url("../mates/camionero/WhatsApp Image 2023-04-19 at 1.16.05 PM (1).jpeg"); }
+
+main .imagen4 {
+  grid-area: imagen4;
+  background-image: url("../imagenes/imperial.jfif"); }
+
+main .imagen5 {
+  grid-area: imagen5;
+  background-image: url("../mates/imperial/imperial.jpeg"); }
+
+main .imagen6 {
+  grid-area: imagen6;
+  background-image: url("../mates/imperial/WhatsApp Image 2023-04-19 at 1.16.05 PM.jpeg"); }
 
 .contactanos .gracias {
   display: flex;
@@ -263,6 +269,8 @@ footer {
     height: auto; }
     main .contactanos {
       height: auto; }
+  .todos-los-mates {
+    height: auto; }
   .mate {
     height: 80vh; }
     .mate .grid-conteiner {

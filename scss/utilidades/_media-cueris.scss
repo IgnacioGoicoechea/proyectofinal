@@ -54,11 +54,15 @@
     }
 }
 @media (max-width: 767px) {
+   
     main {
         height: auto;
         .contactanos {
             height: auto;
         }
+    }
+    .todos-los-mates{
+        height: auto;
     }
     .mate {
         height: 80vh;
