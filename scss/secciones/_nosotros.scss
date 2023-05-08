@@ -1,0 +1,23 @@
+.nosotros {
+    @include flex-mobile
+     height: 80vh;
+ 
+     div {
+         .sobre-nosotros {
+             @include flex(center,null,null)
+             width: 350px;
+             padding: 20px;
+ 
+             .presentacion {
+                 font-weight: 700;
+                 font-family: Georgia, "Times New Roman", Times, serif;
+             }
+ 
+             iframe {
+                 height: 300px;
+                 width: 300px;
+             }
+         }
+     }
+ }
+ 

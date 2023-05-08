@@ -1,0 +1,64 @@
+main {
+    height: 70vh;
+    text-align: center;
+    background: $fondo;
+    h1 {
+        color: #171a19;
+        padding: 10px 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Courier, monospace;
+    }
+    div {
+        display: flex;
+
+        justify-content: space-around;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                .btn {
+                    background-color: rgba(234, 243, 151, 1);
+                    border: none;
+                    color: black;
+                    font-weight: bolder;
+                    padding: 0 12px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                        border: 2px black solid;
+                        background-color: rgba(234, 243, 151, 1);
+                        color: black;
+                    }
+                }
+            }
+
+            img {
+                padding: 10px;
+            }
+        }
+    }
+    img {
+        width: 320px;
+    }
+    div {
+        section {
+            .texto-inicio {
+                width: 350px;
+                text-align: center;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .tipografia{
+                font-family: $letra;
+                font-size: large;
+            }
+            .card {
+                width: $ancho;
+            }
+        }
+    }
+}

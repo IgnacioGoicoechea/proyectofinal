@@ -1,0 +1,28 @@
+footer {
+    height: 15vh;
+    display: flex;
+    text-align: center;
+    background-color: rgba(222, 184, 135, 1);
+    flex-direction: column;
+
+    a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 15px;
+        list-style: none;
+        text-decoration: none;
+        font-weight: bolder;
+        color: #171a19;
+    }
+
+    hr {
+        display: flex;
+    }
+
+    .pie {
+        display: flex;
+        justify-content: center;
+    }
+}

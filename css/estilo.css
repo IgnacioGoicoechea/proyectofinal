@@ -1,10 +1,4 @@
-/* colores que voy a utilizar
-#DFD9E2
-#C3ACCE
-#89909F
-#538083
-#2A7F62
-*/
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -37,14 +31,11 @@ header {
   header nav img {
     width: 150px; }
 
-/* el cuerpo de la pagina */
+/* index*/
 main {
   height: 70vh;
   text-align: center;
-  background: burlywood;
-  background: linear-gradient(0deg, burlywood 0%, #d6e868 50%, #eaf397 100%);
-  /* seccion de mates */
-  /* seccion de mates */ }
+  background: linear-gradient(0deg, burlywood 0%, #d6e868 50%, #eaf397 100%); }
   main h1 {
     color: #171a19;
     padding: 10px 0;
@@ -73,12 +64,18 @@ main {
   main img {
     width: 320px; }
   main div section .texto-inicio {
-    width: 320px;
+    width: 350px;
     text-align: center;
     padding: 10px;
     box-sizing: border-box; }
+  main div section .tipografia {
+    font-family: "Shadows Into Light", cursive;
+    font-size: large; }
   main div section .card {
-    width: 250px; }
+    width: 300xp; }
+
+main {
+  /* seccion de mates */ }
   main a {
     text-decoration: none;
     color: #171a19;
@@ -125,49 +122,55 @@ main {
     grid-area: imagen6;
     background-image: url("../mates/imperial/WhatsApp Image 2023-04-19 at 1.16.05 PM.jpeg"); }
 
-/* contactanos */
 .contactanos .gracias {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .contactanos .gracias div .formulario {
+  align-items: center;
+  justify-content: center; }
+  .contactanos .gracias .formulario {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .contactanos .gracias div .formulario input {
+    .contactanos .gracias .formulario input {
       width: 250px;
       margin: 10px; }
-    .contactanos .gracias div .formulario .btn {
+      .contactanos .gracias .formulario input:focus {
+        background-color: black;
+        color: aliceblue; }
+    .contactanos .gracias .formulario .btn {
       background-color: #eaf397;
       border: none;
       color: black;
       font-weight: bolder;
       padding: 0 12px;
       transition: 0.5s; }
-      .contactanos .gracias div .formulario .btn:hover {
+      .contactanos .gracias .formulario .btn:hover {
         transform: scale(1.2);
         border: 2px black solid;
         background-color: #eaf397;
         color: black; }
-    .contactanos .gracias div .formulario p {
+    .contactanos .gracias .formulario p {
       font-weight: bold; }
-    .contactanos .gracias div .formulario textarea {
+    .contactanos .gracias .formulario textarea {
       width: 251px;
       height: 246px; }
-  .contactanos .gracias .muchas {
-    margin: 40px; }
+      .contactanos .gracias .formulario textarea:focus {
+        background-color: black;
+        color: aliceblue; }
+
+.contactanos .muchas {
+  margin: 40px; }
 
 /* contactanos */
 /* sobre sonostros */
 .nosotros {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   height: 80vh; }
   .nosotros div .sobre-nosotros {
     display: flex;
-    width: 350px;
     align-items: center;
+    width: 350px;
     padding: 20px; }
     .nosotros div .sobre-nosotros .presentacion {
       font-weight: 700;
@@ -259,6 +262,8 @@ footer {
 @media (max-width: 767px) {
   main {
     height: auto; }
+    main .contactanos {
+      height: auto; }
   .mate {
     height: 80vh; }
     .mate .grid-conteiner {

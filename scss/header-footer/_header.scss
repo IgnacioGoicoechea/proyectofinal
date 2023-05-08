@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(234, 243, 151, 1)!important;
+    height: 25vh;
+
+    .bg-body-tertiary {
+        padding: 0;
+    }
+
+    .fondo {
+        background-color: #eaf397;
+    }
+
+    nav {
+        div {
+            a {
+                padding: 15px 50px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            padding: 0 20px;
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        img {
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.main-pago {
+    height: 70vh;
+
+    .forma-de-pago {
+        @include flex-mobile;
+
+        .pago {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 20px;
+                font-weight: bolder;
+               @include flex (center, center,null)
+
+                img {
+                    width: 50px;
+                }
+
+                .mercado {
+                    width: 100px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+
+}
