@@ -156,9 +156,8 @@ main {
       .contactanos .gracias .formulario textarea:focus {
         background-color: black;
         color: aliceblue; }
-
-.contactanos .muchas {
-  margin: 40px; }
+  .contactanos .gracias .muchas {
+    margin: 40px; }
 
 /* contactanos */
 /* sobre sonostros */
