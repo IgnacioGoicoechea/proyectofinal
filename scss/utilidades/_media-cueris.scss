@@ -54,13 +54,33 @@
     }
 }
 @media (max-width: 767px) {
-   
+  
+    
     main {
         height: auto;
         .contactanos {
             height: auto;
         }
+        div {
+            section {
+                .texto-inicio {
+                    width:250px;
+                    text-align: center;
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+                .tipografia{
+                    font-family: $letra;
+                    font-size: large;
+                    width: 250px;
+                }
+                .card {
+                    width: 250xp;
+                }
+            }
+        }
     }
+
     .todos-los-mates{
         height: auto;
     }

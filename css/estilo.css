@@ -73,7 +73,7 @@ main {
     font-size: large;
     width: 350px; }
   main div section .card {
-    width: 300xp; }
+    width: 350xp; }
 
 main a {
   text-decoration: none;
@@ -270,6 +270,17 @@ footer {
     height: auto; }
     main .contactanos {
       height: auto; }
+    main div section .texto-inicio {
+      width: 250px;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box; }
+    main div section .tipografia {
+      font-family: "Shadows Into Light", cursive;
+      font-size: large;
+      width: 250px; }
+    main div section .card {
+      width: 250xp; }
   .todos-los-mates {
     height: auto; }
   .mate {
