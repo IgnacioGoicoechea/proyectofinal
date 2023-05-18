@@ -15,6 +15,9 @@ footer {
         text-decoration: none;
         font-weight: bolder;
         color: #171a19;
+        &:visited{
+            color:rgba(221, 50, 7, 0.753);
+        }
     }
 
     hr {

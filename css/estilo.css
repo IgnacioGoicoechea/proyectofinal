@@ -143,6 +143,9 @@ main .imagen6 {
       .contactanos .gracias .formulario input:focus {
         background-color: black;
         color: aliceblue; }
+      .contactanos .gracias .formulario input::placeholder {
+        color: blue;
+        box-shadow: 0 0 15px, 10px bisque; }
     .contactanos .gracias .formulario .btn {
       background-color: #eaf397;
       border: none;
@@ -227,6 +230,8 @@ footer {
     text-decoration: none;
     font-weight: bolder;
     color: #171a19; }
+    footer a:visited {
+      color: rgba(221, 50, 7, 0.753); }
   footer hr {
     display: flex; }
   footer .pie {

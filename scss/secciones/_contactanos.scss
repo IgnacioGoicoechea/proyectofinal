@@ -12,6 +12,10 @@
                     &:focus{
                         @include negro-input
                     }
+                    &::placeholder{
+                        color: blue;
+                        box-shadow: 0 0 15px, 10px bisque ;
+                    }
                 }
                 .btn {
                     background-color: $botones;
