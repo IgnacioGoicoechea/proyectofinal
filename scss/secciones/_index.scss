@@ -1,5 +1,5 @@
 main {
-    height: 70vh;
+    min-height: 70vh;
     text-align: center;
     background: $fondo;
     h1 {
@@ -42,24 +42,24 @@ main {
         }
     }
     img {
-        width: 320px;
-    }
-    div {
-        section {
-            .texto-inicio {
-                width:350px;
-                text-align: center;
-                padding: 10px;
-                box-sizing: border-box;
-            }
-            .tipografia{
-                font-family: $letra;
-                font-size: large;
-                width: 350px;
-            }
-            .card {
-                width: 350xp;
+        width: 320px; div {
+            section {
+                .texto-inicio {
+                    width:350px;
+                    text-align: center;
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+                .tipografia{
+                    font-family: $letra;
+                    font-size: large;
+                    width: 350px;
+                }
+                .card {
+                    width: 350xp;
+                }
             }
         }
     }
+   
 }

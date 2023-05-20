@@ -1,4 +1,5 @@
 .contactanos {
+    min-height: 70vh;
     .gracias {
         @include flex(center, center,null)
             .formulario {
